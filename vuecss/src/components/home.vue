@@ -40,9 +40,9 @@
     </el-aside>
     
     <el-container>
-      <el-header @select="handleSelect" active-text-color="#ffd04b">
+      <!-- <el-header @select="handleSelect" active-text-color="#ffd04b"> -->
         <!-- 添加侧边栏折叠按钮 -->
-        <hamburger :is-active="isHamburgerActive" class="hamburger-container" @toggleClick="toggleSideBar"></hamburger>
+        <!-- <hamburger :is-active="isHamburgerActive" class="hamburger-container" @toggleClick="toggleSideBar"></hamburger>
         <el-dropdown>
           <i class="el-icon-setting" style="margin-right: 15px"></i>
           <el-dropdown-menu slot="dropdown">
@@ -52,10 +52,11 @@
           </el-dropdown-menu>
         </el-dropdown>
         <span>zhengp</span>
-      </el-header>
+      </el-header> -->
       
       <el-main class="mainContainer">
-          <card></card>
+          <!-- <card></card> -->
+          <login></login>
       </el-main>
     </el-container>
   </el-container>
@@ -64,7 +65,7 @@
 <script>
 // 侧边栏数据
 import hamburger from './hamburger'
-
+import login from './examples/login'
 import card from './examples/card'
   export default {
     data() {
@@ -117,7 +118,7 @@ import card from './examples/card'
         defaultProps:defaultProps,
       }
     },
-    components:{hamburger,card},
+    components:{hamburger,card,login},
     methods: {
       handleSelect(key, keyPath) {
           console.log(key, keyPath);

@@ -34,6 +34,8 @@ export default {
         animation: cardContainerLoad 2s;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         background: -webkit-linear-gradient(left bottom,rgb(121,150,137),rgb(55,68,110));
+        margin-top:5px;
+        margin-bottom:5px;
     }
 
     @keyframes cardContainerLoad {
