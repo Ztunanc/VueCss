@@ -56,7 +56,8 @@
       
       <el-main class="mainContainer">
           <!-- <card></card> -->
-          <login></login>
+          <!-- <login></login> -->
+          <emailInput></emailInput>
       </el-main>
     </el-container>
   </el-container>
@@ -67,6 +68,7 @@
 import hamburger from './hamburger'
 import login from './examples/login'
 import card from './examples/card'
+import emailInput from './examples/emailInput.vue'
   export default {
     data() {
       let treeData = [
@@ -118,7 +120,7 @@ import card from './examples/card'
         defaultProps:defaultProps,
       }
     },
-    components:{hamburger,card,login},
+    components:{hamburger,card,login,emailInput},
     methods: {
       handleSelect(key, keyPath) {
           console.log(key, keyPath);
